@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
 import { auto } from "@cloudinary/url-gen/actions/resize";
-import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
+import { AutoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import * as Yup from "yup";
@@ -55,7 +56,7 @@ const FormPage = () => {
         .image(response.data.public_id)
         .format("auto")
         .quality("auto")
-        .resize(auto().gravity(autoGravity()).width(200).height(200));
+        .resize(auto().gravity(AutoGravity()).width(200).height(200));
       setCloudinaryImage(uploadedImage);
     } catch (error) {
       console.error("Error uploading image:", error);
