@@ -35,7 +35,7 @@ const Ticket = () => {
         allowTaint: true,
         useCORS: true,
         logging: false,
-        backgroundColor: true,
+        backgroundColor: false,
         scale: 2, 
         onclone: (clonedDoc) => {
           // Ensure all images are loaded in the cloned document
