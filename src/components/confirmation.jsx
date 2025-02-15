@@ -141,7 +141,7 @@ const Ticket = () => {
                 <div className="info-grid">
                   <div className="type">
                     <p className="label">Ticket Type:</p>
-                    <p className="value bold">{ticketType}</p>
+                    <p className="value">{ticketType}</p>
                   </div>
                   <div className="tic">
                     <p className="label">Ticket for:</p>
