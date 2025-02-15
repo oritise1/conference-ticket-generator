@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/header";
 import TicketSelection from "./components/ticketSelection";
 import Confirmation from "./components/confirmation";
@@ -16,6 +16,7 @@ const App = () => {
           <Route path="/my-tickets" element={<Confirmation />} />
           <Route path="/form" element={<FormPage />} />
           <Route path="/about-project" element={<AboutProject />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
@@ -117,7 +118,7 @@ const AboutProject = () => {
             Redux (if needed).
           </li>
           <li>
-            <strong>File Handling:</strong> Users should be able to upload
+            <strong>File Handling:</strong>Users should be able to upload
             images (profile picture for ticket) using Firebase Storage,
             Cloudinary, or local preview with <code>URL.createObjectURL()</code>
             .
