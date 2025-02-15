@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
-import { Cloudinary } from "@cloudinary/url-gen";
 import { auto } from "@cloudinary/url-gen/actions/resize";
 import { AutoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 import { useNavigate } from "react-router-dom";
