@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f4f4; */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container{
+  color: #fff;
+}
+.back a{
+  color: #197686;
+}
+.submit a{
+  color: #fff;
+}
+.submit:hover, .back:hover{
+    border: none;
+}

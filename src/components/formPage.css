@@ -1,0 +1,203 @@
+.formWrapper {
+  width: 50%;
+  padding: 1rem 25%;
+}
+.container {
+  padding: 2rem 3rem;
+  max-width: 600px;
+  background-color: #041e23;
+  border: 1px solid #0e464f;
+  border-radius: 2.3rem;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  font-family: JejuMyeongjo, sans-serif;
+  color: #fff;
+}
+.formTic {
+  margin-top: 0;
+}
+.formStep {
+  font-family: Roboto, sans-serif;
+  font-size: 0.9rem;
+  color: #fafafa60;
+  text-decoration: underline #fafafa60;
+}
+.progress-container {
+  width: 100%;
+  max-width: 600px;
+  height: 3px;
+  background-color: #0e464f;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  margin-top: -1.5rem;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email-input-wrapper {
+  position: relative;
+}
+
+.emailText {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  max-width: 91%;
+  height: 2rem;
+  border-radius: 0.6rem;
+  background-color: #052228;
+  border: 1px solid #07373f;
+  color: #fff;
+}
+
+.email-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+}
+
+.progress-bars {
+  width: 64%;
+  height: 100%;
+  background-color: #24a0b5;
+  border-radius: 1rem;
+}
+.photo {
+  font-size: 1rem;
+  font-family: "Roboto", serif;
+}
+.uploadWrapper {
+  background-color: #00000020;
+  height: 30vh;
+  padding: 0 25%;
+  margin-bottom: 20px;
+}
+.upload-box {
+  background-color: #0e464f;
+  border-radius: 1.5rem;
+  height: 94%;
+  text-align: center;
+  cursor: pointer;
+  padding: 3% 0.5rem;
+}
+
+.plus {
+  margin-top: 35%;
+  font-family: Roboto, serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+}
+.plus img {
+  width: 2rem;
+  height: 2rem;
+}
+.upload-box .AdvancedImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 1px;
+  font-family: Roboto, serif;
+  font-size: 1.1rem;
+}
+.progress-barContainers {
+  width: 100%;
+  max-width: 600px;
+  height: 3px;
+  background-color: #0e464f;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+}
+.inputName,
+.form-group textarea {
+  width: 100%;
+  max-width: 96%;
+  height: 2rem;
+  border-radius: 0.6rem;
+  padding: 0.5rem;
+  background-color: #052228;
+  border: 1px solid #07373f;
+  color: #fff;
+}
+.form-group textarea {
+  min-height: 20vh;
+}
+
+.buttons {
+  font-family: JejuMyeongjo, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+  border: none;
+  cursor: pointer;
+  gap: 2rem;
+}
+
+.back {
+  width: 50%;
+  background-color: #052228;
+  border: 1px solid #197686;
+  color: #197686;
+}
+
+.submit {
+  width: 50%;
+  background-color: #197686;
+  color: white;
+  border-color: #197686;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .formWrapper {
+    width: 90%;
+    padding: 5%;
+  }
+  .container {
+    width: 90%;
+    padding: 5%;
+  }
+  .emailText {
+    max-width: 89%;
+  }
+  .upload-box {
+    height: 96%;
+  }
+  .uploadWrapper {
+    padding: 0 5%;
+  }
+  .buttons {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+  }
+  .submit, .back{
+    width: 100%;
+  }
+}
