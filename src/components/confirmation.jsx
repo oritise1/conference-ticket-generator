@@ -99,7 +99,8 @@ const Ticket = () => {
           <h2>Your Ticket is Booked!</h2>
           <p>You can download or Check your email for a copy</p>
         </div>
-          <div className="ticket-card" ref={ticketRef}>
+        <div ref={ticketRef}>
+          <div className="ticket-card">
             <div className="ticket-card-background"></div>
             <div className="ticketContent">
               <h1 className="ticket-title">Techember Fest "25</h1>
@@ -161,6 +162,7 @@ const Ticket = () => {
                src="https://barcode.tec-it.com/barcode.ashx?data=978020137962&code=EAN13"
               alt="barcode"
             />
+          </div>
           </div>
         <div className="download-button">
           <button 
